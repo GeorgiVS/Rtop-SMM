@@ -1,0 +1,58 @@
+.layout {
+	position: relative;
+	min-width: 320px;
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 15px;
+	//
+	&::before,
+	&::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+	//
+	&-big {
+		max-width: 1300px;
+		margin: 0 auto;
+		padding: 0;
+		overflow: hidden;
+	}
+	//
+	&-fixed {
+		position: fixed;
+		z-index: 1000;
+		top: 0;
+		left: 0;
+		max-width: 100%;
+		width: 100%;
+		background: white;
+	}
+	//
+	&-bg {
+		&-red {
+			background: $colorRed;
+		}
+	}
+	//
+	&--header {
+		position: relative;
+		max-width: 1170px;
+		margin: 0 auto;
+	}
+	
+	//
+	&--banner {
+		position: relative;
+	}
+		
+	//
+	&-result {
+		margin-bottom: 2rem;
+	}
+	//
+	&--calculator {
+		position: relative;
+		margin-bottom: 2rem;
+	}
+}

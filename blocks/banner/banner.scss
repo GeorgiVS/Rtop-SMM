@@ -1,0 +1,44 @@
+.banner {
+	height: 0;
+	padding-bottom: 54.0%;
+	overflow: hidden;
+	color: white;
+	background: url(../../blocks/banner/media/mask.png) no-repeat;
+	background-size: 100% 100%;
+	//
+	&--title {
+		margin-top: 10%;
+		//
+		@media #{$xs} {
+			margin-top: 15%;
+		}
+		@media #{$sm} {
+			margin-top: 23%;
+		}
+	}
+	//
+	&--text {
+		margin-top: 2%;
+		max-width: 210px;
+		font-size: 1.0rem;
+		//
+		@media #{$sm} {
+			font-size: 1.5rem;
+			max-width: 510px;
+		}
+	}
+	//
+	&--button {
+		margin-top: 3%;
+	}
+	//
+	&--video {
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+	
+}
