@@ -19,7 +19,7 @@ body {
 	@media #{$lg} {
 		font-size: 100%;
 	}
-		@media #{$xl} {
+	@media #{$xl} {
 		font-size: 110%;
 	}
 }
@@ -36,29 +36,41 @@ h2,
 		font-size: 2rem;
 	}
 	@media #{$sm} {
-		font-size: 3rem;
+		font-size: 2.5rem;
 	}
 	@media #{$lg} {
-		font-size: 4rem;
+		font-size: 3rem;
 	}
-
 }
 
 %itemTitle {
-	max-width: 195px;
 	font: {
 		family: LatoBlack;
 		size: 1.2rem;
 	}
 	//
 	@media #{$xs} {
-		font-size: 1.6rem;
+		font-size: 1.2rem;
+	}
+	//
+	@media #{$lg} {
+		font-size: 1.5rem;
 	}
 }
 
 .section {
-	padding-top: 59px;
+
+	padding: 59px 0 3rem 0;
+	//
+	&-noBottomPadding {
+
+		padding-bottom: 0;
+	}
 	&-red {
 		background: $colorRed;
+	}
+	//
+	&-grey {
+		background: $colorGrey;
 	}
 }

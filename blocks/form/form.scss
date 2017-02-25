@@ -2,12 +2,65 @@
 	padding: 10px;
 	background: $colorGrey;
 	//
-	@media #{$sm} {
+	@media #{$lg} {
 		padding: 20px 30px;
 	}
 	//
 	&--title {
 		@extend %itemTitle;
-
+	}
+	//
+	&--input {
+		display: block;
+		width: 100%;
+		margin-top: 15px;
+		padding: 1rem;
+		border: none;
+		//
+		&::-webkit-input-placeholder {
+			color: #676060;
+			opacity: 1;
+			transition: opacity 0.3s ease;
+		}
+		&::-moz-placeholder {
+			color: #676060;
+			opacity: 1;
+			transition: opacity 0.3s ease;
+		}
+		&:-moz-placeholder {
+			color: #676060;
+			opacity: 1;
+			transition: opacity 0.3s ease;
+		}
+		&:-ms-input-placeholder {
+			color: #676060;
+			opacity: 1;
+			transition: opacity 0.3s ease;
+		}
+		&:focus::-webkit-input-placeholder {
+			opacity: 0;
+			transition: opacity 0.3s ease;
+		}
+		&:focus::-moz-placeholder {
+			opacity: 0;
+			transition: opacity 0.3s ease;
+		}
+		&:focus:-moz-placeholder {
+			opacity: 0;
+			transition: opacity 0.3s ease;
+		}
+		&:focus:-ms-input-placeholder {
+			opacity: 0;
+			transition: opacity 0.3s ease;
+		}
+		//
+		@media #{$lg} {
+			height: 45px;
+			margin-top: 30px;
+		}
+	}
+	//
+	&--button {
+		margin-top: 30px;
 	}
 }

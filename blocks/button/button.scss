@@ -1,7 +1,5 @@
 .button {
 	padding: 0.4rem 2.4rem;
-
-	
 	font: {
 		family: LatoBlack;
 		size: 0.7rem;
@@ -22,15 +20,18 @@
 		transform: scale(0.9);
 	}
 	//
-	&-white {
+	&-bg-white {
 		border: 1px solid white;
 		background: white;
 		color: $colorRed;
 		//
 		&:hover {
-			
 			background: transparent;
 			color: white;
 		}
+	}
+	//
+	&-color-white {
+		color: white;
 	}
 }

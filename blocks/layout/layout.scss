@@ -12,7 +12,7 @@
 		clear: both;
 	}
 	//
-		@media #{$lg} {
+	@media #{$lg} {
 		padding: 0 25px;
 	}
 	//
@@ -33,30 +33,21 @@
 		background: white;
 	}
 	//
-	&-bg {
-		&-red {
-			background: $colorRed;
-		}
-	}
-	//
 	&--header {
 		position: relative;
 		max-width: 1920px;
 		margin: 0 auto;
 	}
-	
 	//
 	&--banner {
 		position: relative;
 	}
-		
-	//
-	&-result {
-		margin-bottom: 2rem;
-	}
 	//
 	&--calculator {
 		position: relative;
-		margin-bottom: 2rem;
+	}
+	//
+	&--stages {
+		position: relative;
 	}
 }

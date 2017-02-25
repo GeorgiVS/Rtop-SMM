@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* font-family: "LatoRegular"; */
 @font-face {
   font-family: "LatoRegular";
@@ -1230,7 +1231,7 @@ h2,
   h1,
   h2,
   .calculator--number {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -1238,28 +1239,41 @@ h2,
   h1,
   h2,
   .calculator--number {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
 
-.result-2 .result--itemTitle, .result--itemTitle, .calculator--itemTitle, .form--title {
-  max-width: 195px;
+.result--itemTitle, .result-2 .result--itemTitle, .calculator--itemTitle, .form--title {
   font-family: LatoBlack;
   font-size: 1.2rem;
 }
 
 @media (min-width: 480px) {
-  .result-2 .result--itemTitle, .result--itemTitle, .calculator--itemTitle, .form--title {
-    font-size: 1.6rem;
+  .result--itemTitle, .result-2 .result--itemTitle, .calculator--itemTitle, .form--title {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .result--itemTitle, .result-2 .result--itemTitle, .calculator--itemTitle, .form--title {
+    font-size: 1.5rem;
   }
 }
 
 .section {
-  padding-top: 59px;
+  padding: 59px 0 3rem 0;
+}
+
+.section-noBottomPadding {
+  padding-bottom: 0;
 }
 
 .section-red {
   background: #eb242b;
+}
+
+.section-grey {
+  background: #ebebeb;
 }
 
 .layout {
@@ -1299,10 +1313,6 @@ h2,
   background: white;
 }
 
-.layout-bg-red {
-  background: #eb242b;
-}
-
 .layout--header {
   position: relative;
   max-width: 1920px;
@@ -1313,13 +1323,12 @@ h2,
   position: relative;
 }
 
-.layout-result {
-  margin-bottom: 2rem;
-}
-
 .layout--calculator {
   position: relative;
-  margin-bottom: 2rem;
+}
+
+.layout--stages {
+  position: relative;
 }
 
 .header {
@@ -1486,39 +1495,23 @@ h2,
   transform: scale(0.9);
 }
 
-.button-white {
+.button-bg-white {
   border: 1px solid white;
   background: white;
   color: #eb242b;
 }
 
-.button-white:hover {
+.button-bg-white:hover {
   background: transparent;
   color: white;
 }
 
-.result-2 .result--itemTitle::before {
-  margin-top: 1.9rem;
-  background-position: -260px -30px;
+.button-color-white {
+  color: white;
 }
 
-.result-2 .result--itemTitle::after {
-  content: '';
-  position: absolute;
-  top: 60px;
-  left: 80px;
-  display: inline-block;
-  width: 100%;
-  height: 2px;
-  background: #eb242b;
-}
-
-.result-2 .result--itemTitle-2::before {
-  background-position: -325px -30px;
-}
-
-.result-2 .result--itemTitle-3::before {
-  background-position: -390px -30px;
+.result {
+  /*Модификаторы*/
 }
 
 .result--title {
@@ -1572,6 +1565,51 @@ h2,
   color: black;
   margin-top: 0.5rem;
   font-size: 0.8rem;
+}
+
+.result--form {
+  margin: 1.5rem 0 1.5rem 0;
+}
+
+@media (min-width: 768px) {
+  .result--form {
+    margin-top: 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .result--form {
+    margin-top: -6.0rem;
+  }
+}
+
+.result-2 .result--title {
+  max-width: 70%;
+  text-align: left;
+}
+
+.result-2 .result--itemTitle::before {
+  margin-top: 1.9rem;
+  background-position: -260px -30px;
+}
+
+.result-2 .result--itemTitle::after {
+  content: '';
+  position: absolute;
+  top: 60px;
+  left: 80px;
+  display: inline-block;
+  width: 100%;
+  height: 2px;
+  background: #eb242b;
+}
+
+.result-2 .result--itemTitle-2::before {
+  background-position: -325px -30px;
+}
+
+.result-2 .result--itemTitle-3::before {
+  background-position: -390px -30px;
 }
 
 .calculator {
@@ -1640,8 +1678,323 @@ h2,
   background: #ebebeb;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .form {
     padding: 20px 30px;
   }
+}
+
+.form--input {
+  display: block;
+  width: 100%;
+  margin-top: 15px;
+  padding: 1rem;
+  border: none;
+}
+
+.form--input::-webkit-input-placeholder {
+  color: #676060;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.form--input::-moz-placeholder {
+  color: #676060;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.form--input:-moz-placeholder {
+  color: #676060;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.form--input:-ms-input-placeholder {
+  color: #676060;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.form--input:focus::-webkit-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.form--input:focus::-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.form--input:focus:-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.form--input:focus:-ms-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+@media (min-width: 1200px) {
+  .form--input {
+    height: 45px;
+    margin-top: 30px;
+  }
+}
+
+.form--button {
+  margin-top: 30px;
+}
+
+.stages {
+  text-align: center;
+}
+
+.stages--item {
+  position: relative;
+  margin: 2rem auto 0 auto;
+  background: white;
+  width: 295px;
+  height: 330px;
+  padding: 40px 50px;
+}
+
+.stages--item-1 {
+  z-index: 30;
+}
+
+@media (min-width: 768px) {
+  .stages--item-1 {
+    position: absolute;
+    left: 15px;
+  }
+}
+
+.stages--item-2 {
+  z-index: 20;
+}
+
+@media (min-width: 768px) {
+  .stages--item-2 {
+    position: absolute;
+    right: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .stages--item-2 {
+    position: relative;
+    top: 10px;
+  }
+  .stages--item-2::before {
+    content: '';
+    position: absolute;
+    top: 176px;
+    left: -300px;
+    display: block;
+    width: 300px;
+    height: 2px;
+    background: #eb242b;
+  }
+}
+
+@media (min-width: 1200px) and (min-width: 1500px) {
+  .stages--item-2::before {
+    width: 500px;
+    left: -500px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .stages--item-2::after {
+    content: '>';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: -16px;
+    color: #eb242b;
+    font-size: 33px;
+  }
+}
+
+@media (min-width: 768px) {
+  .stages--item-3 {
+    margin-top: 400px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .stages--item-3 {
+    margin-top: 0;
+    position: absolute;
+    top: 98px;
+    right: 15px;
+  }
+  .stages--item-3::before {
+    content: '';
+    position: absolute;
+    top: 176px;
+    left: -300px;
+    display: block;
+    width: 300px;
+    height: 2px;
+    background: #eb242b;
+  }
+}
+
+@media (min-width: 1200px) and (min-width: 1500px) {
+  .stages--item-3::before {
+    width: 500px;
+    left: -500px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .stages--item-3::after {
+    content: '>';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: -16px;
+    color: #eb242b;
+    font-size: 33px;
+  }
+}
+
+.stages--number {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-family: LatoBlack;
+  font-size: 330px;
+  line-height: 365px;
+  color: #ebebeb;
+}
+
+.stages--itemTitle {
+  position: relative;
+  z-index: 20;
+  font-family: LatoBlack;
+  font-size: 24px;
+  line-height: 25px;
+}
+
+.stages--text {
+  position: relative;
+  z-index: 20;
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.portfolio {
+  text-align: center;
+}
+
+.portfolio--col {
+  padding: 0;
+}
+
+.portfolio--item {
+  height: 300px;
+  transition: .5s;
+}
+
+.portfolio--item:hover {
+  background: transparent;
+}
+
+.portfolio--item:hover .portfolio--logo {
+  opacity: 0;
+}
+
+.portfolio--item:hover .portfolio--text {
+  transform: none;
+  opacity: 1;
+}
+
+@media (min-width: 1200px) {
+  .portfolio--item {
+    height: 375px;
+  }
+}
+
+.portfolio--item-title {
+  height: 70px;
+}
+
+@media (min-width: 1200px) {
+  .portfolio--item-title {
+    height: 300px;
+  }
+}
+
+.portfolio--item-1 {
+  background: #2e261b;
+}
+
+.portfolio--item-2 {
+  background: #b1cc2b;
+}
+
+.portfolio--item-3 {
+  background: #ebebeb;
+}
+
+.portfolio--title {
+  margin: 0;
+  line-height: 70px;
+}
+
+@media (min-width: 768px) {
+  .portfolio--title {
+    line-height: 300px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .portfolio--title {
+    line-height: 375px;
+  }
+}
+
+.portfolio--link {
+  position: relative;
+  display: table;
+  width: 100%;
+  height: 100%;
+  text-decoration: none !important;
+}
+
+.portfolio--logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+  transition: .5s;
+}
+
+.portfolio--text {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  padding: 2rem;
+  color: black;
+  opacity: 0;
+  transform: translateY(10%);
+  transition: transform .5s;
+}
+
+.footer {
+  height: 65px;
+  background: #181818;
 }
