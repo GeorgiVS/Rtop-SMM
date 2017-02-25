@@ -19,13 +19,14 @@ body {
 	@media #{$lg} {
 		font-size: 100%;
 	}
+		@media #{$xl} {
+		font-size: 110%;
+	}
 }
 
 h1,
 h2,
 %h1_h2 {
-	margin: 0;
-	padding: 0;
 	font: {
 		family: LatoBlack;
 		size: 1.5rem;
@@ -40,11 +41,23 @@ h2,
 	@media #{$lg} {
 		font-size: 4rem;
 	}
+
+}
+
+%itemTitle {
+	max-width: 195px;
+	font: {
+		family: LatoBlack;
+		size: 1.2rem;
+	}
+	//
+	@media #{$xs} {
+		font-size: 1.6rem;
+	}
 }
 
 .section {
 	padding-top: 59px;
-
 	&-red {
 		background: $colorRed;
 	}

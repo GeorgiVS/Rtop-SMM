@@ -31,15 +31,12 @@
 		color: #b40c12;
 	}
 	//
-	&--formTitle {
-		@extend .result--itemTitle;
+	&--itemTitle {
+		@extend %itemTitle;
 		margin-top: 2.5rem;
 		margin-bottom: 1.8rem;
 		max-width: 100%;
-		//
-		&::before {
-			display: none;
-		}
+
 	}
 	//
 	&--choise {

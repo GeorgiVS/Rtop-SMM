@@ -2,12 +2,12 @@
 	h2.calculator--title Сколько стоит SMM?
 		.calculator--number 01/
 			.calculator--total 04
-	.calculator--item.calculator--item_1
+	form.calculator--item.calculator--item_1
 		.calculator--itemTitle Получаете ли Вы сейчас клиентов из социальных сетей?
 		.calculator--choise
-			input.calculator--choise_1(type="radio" id="choise_1" name="item_1" value="да")
+			input.calculator--choise_1(type="radio" id="choise_1" name="item_1" value="да" required)
 			label(for="choise_1") Да
 		.calculator--choise
-			input.calculator--choise_1(type="radio" id="choise_2" name="item_1" value="нет")
+			input.calculator--choise_1(type="radio" id="choise_2" name="item_1" value="нет" required)
 			label(for="choise_2") Нет
 		button.button.button-white.calculator--button(type="submit") Далее

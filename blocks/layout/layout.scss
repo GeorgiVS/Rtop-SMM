@@ -1,7 +1,7 @@
 .layout {
 	position: relative;
 	min-width: 320px;
-	max-width: 1170px;
+	max-width: 1920px;
 	margin: 0 auto;
 	padding: 0 15px;
 	//
@@ -12,8 +12,12 @@
 		clear: both;
 	}
 	//
+		@media #{$lg} {
+		padding: 0 25px;
+	}
+	//
 	&-big {
-		max-width: 1300px;
+		max-width: 2560px;
 		margin: 0 auto;
 		padding: 0;
 		overflow: hidden;
@@ -37,7 +41,7 @@
 	//
 	&--header {
 		position: relative;
-		max-width: 1170px;
+		max-width: 1920px;
 		margin: 0 auto;
 	}
 	
