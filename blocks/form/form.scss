@@ -1,0 +1,13 @@
+.form {
+	padding: 10px;
+	background: $colorGrey;
+	//
+	@media #{$sm} {
+		padding: 20px 30px;
+	}
+	//
+	&--title {
+		@extend %itemTitle;
+
+	}
+}
