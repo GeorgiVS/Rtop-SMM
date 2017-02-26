@@ -1,12 +1,11 @@
 html,
 body {
-	height: 100%;
-	margin: 0;
+
 	font: {
 		family: LatoRegular;
 		size: 80%;
 	}
-	line-height: 1.4rem;
+
 	color: $colorBlack;
 	//
 	@media #{$xs} {
@@ -27,6 +26,7 @@ body {
 h1,
 h2,
 %h1_h2 {
+line-height:2rem;
 	font: {
 		family: LatoBlack;
 		size: 1.5rem;
@@ -34,12 +34,15 @@ h2,
 	//
 	@media #{$xs} {
 		font-size: 2rem;
+		
 	}
 	@media #{$sm} {
 		font-size: 2.5rem;
+		line-height:3rem;
 	}
 	@media #{$lg} {
 		font-size: 3rem;
+	
 	}
 }
 
@@ -59,11 +62,14 @@ h2,
 }
 
 .section {
-
+	position: relative;
+	min-width: 320px;
+	max-width: 1920px;
+	margin: 0 auto;
+	overflow: hidden;
 	padding: 59px 0 3rem 0;
 	//
 	&-noBottomPadding {
-
 		padding-bottom: 0;
 	}
 	&-red {

@@ -3,7 +3,8 @@
 	//
 	&--title {
 		color: white;
-				&::after {
+		//
+		&::after {
 			content: '';
 			display: none;
 			//
@@ -20,13 +21,15 @@
 	}
 	//
 	&--number {
+		@extend %h1_h2;
 		position: absolute;
 		top: 0;
 		right: 0;
-		@extend %h1_h2;
+		
 	}
 	//
 	&--total {
+		@extend %h1_h2;
 		display: inline-block;
 		color: #b40c12;
 	}
@@ -36,7 +39,6 @@
 		margin-top: 2.5rem;
 		margin-bottom: 1.8rem;
 		max-width: 100%;
-
 	}
 	//
 	&--choise {
@@ -56,7 +58,5 @@
 	//
 	&--button {
 		margin-top: 2rem;
-		//
-
 	}
 }

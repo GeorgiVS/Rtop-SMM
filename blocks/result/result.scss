@@ -1,9 +1,11 @@
 .result {
 	//
 	&--title {
-	
 		text-align: center;
-		
+	}
+	//
+	&--sum {
+		margin-top: 1rem;
 	}
 	//
 	&--col {
@@ -95,7 +97,6 @@
 		//
 		.result--itemTitle {
 			@extend %itemTitle;
-			
 			//
 			&::before {
 				margin-top: 1.9rem;
