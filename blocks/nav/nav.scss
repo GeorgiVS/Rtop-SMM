@@ -1,0 +1,38 @@
+.nav {
+	z-index: -1000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 100%;
+	background: white;
+	text-align: center;
+	opacity: 0;
+	transition: .5s;
+	//
+	&-active {
+		opacity: 1;
+		z-index: 1000;
+	}
+	//
+	&--linkWrapper {
+		position: absolute;
+		width: 100%;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	&--link {
+		font-family: LatoBlack;
+		font-size: 1.8rem;
+		display: table;
+		margin: 2rem auto 0 auto;
+		color: $colorBlack;
+		text-decoration: none !important;
+		transition: .5s;
+		//
+		&:hover {
+			color: $colorRed;
+		}
+	}
+}

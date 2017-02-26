@@ -3109,7 +3109,7 @@
 $(document).ready(function () {
 	$('#fullpage').fullpage({
 		responsive: 768,
-		
+		scrollBar:true,
 		responsiveHeight: 768,
 		anchors: ['firstPage','secondPage','3rdPage', '4rdPage']
 	});

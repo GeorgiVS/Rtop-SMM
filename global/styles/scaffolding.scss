@@ -16,9 +16,6 @@ body {
 	@media #{$lg} {
 		font-size: 100%;
 	}
-	@media #{$xl} {
-		font-size: 110%;
-	}
 }
 
 h1,
@@ -41,7 +38,11 @@ h2,
 		font-size: 3rem;
 	}
 }
-
+h1 {
+		@media #{$lg} {
+		font-size: 4rem;
+	}
+}
 %itemTitle {
 	font: {
 		family: LatoBlack;
@@ -77,7 +78,7 @@ h2,
 	}
 	//
 	&-footer {
-		
 		padding-bottom: 65px;
 	}
 }
+

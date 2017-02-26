@@ -1,12 +1,10 @@
 .header {
-
 	height: 59px;
 	padding: 15px 0;
 	//
 	&--logo {
 		position: absolute;
 		top: 9px;
-
 	}
 	//
 	&--socialWrapper {
@@ -59,7 +57,6 @@
 		height: 14px;
 		border-top: 2px solid #a2b0b7;
 		cursor: pointer;
-		transition: .5s;
 		//
 		&:hover {
 			border-top: 2px solid $colorRed;
@@ -76,6 +73,7 @@
 			height: 2px;
 			margin-top: 4px;
 			background: #a2b0b7;
+			transition: .5s;
 		}
 		//
 		&::after {
@@ -87,6 +85,28 @@
 			width: 13px;
 			height: 2px;
 			background: #a2b0b7;
+			transition: .6s;
+		}
+		//
+		&-active {
+			top: 15px;
+			border: none !important;
+			//
+			&::after {
+				width: 100%;
+				transform: rotate(45deg);
+				background: $colorRed;
+			}
+			//
+			&::before {
+				width: 100%;
+				margin: 0;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				transform: rotate(-45deg);
+				background: $colorRed;
+			}
 		}
 	}
 }

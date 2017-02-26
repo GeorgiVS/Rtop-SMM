@@ -38,6 +38,11 @@
 		background: white;
 
 	}
+	//
+	&-disabled {
+		display: none;
+		z-index: -1000;
+	}
 
 	//
 	&--header {

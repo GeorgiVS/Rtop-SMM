@@ -26,11 +26,10 @@
 		top: 0;
 		right: 0;
 	}
-		//
+	//
 	&--number {
 		@extend %h1_h2;
 		display: inline-block;
-	
 	}
 	//
 	&--total {
@@ -83,34 +82,51 @@
 	}
 	//
 	&--choise {
-		margin-top: 0.5rem;
+		margin-top: 1.5rem;
 	}
 	//
 	input {
-		width: 30px;
-		height: 30px;
+		display: none;
+		//
+		&:checked+label::before {
+			content: "\2713";
+			text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+			line-height: 2rem;
+			font-size: 2rem;
+			color: $colorBlack;
+			text-align: center;
+		}
 	}
 	//
 	label {
 		position: relative;
-		margin-left: 0.8rem;
-		top: -9px;
+		padding-left: 3rem;
+		line-height: 2rem;
+		font-size: 1rem;
+		//
+		&::before {
+			position: absolute;
+			left: 0;
+			content: '';
+			display: inline-block;
+			width: 2rem;
+			height: 2rem;
+			background: white;
+		}
+		//
 	}
 	//
 	&--button {
 		position: relative;
 		z-index: -100;
 		margin-top: 2rem;
-		
 		//
 		&-active {
 			z-index: 100;
-		
 		}
 		//
 		&_no {
 			left: -122px;
 		}
 	}
-	
 }
