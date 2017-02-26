@@ -1925,6 +1925,42 @@ h2,
   color: #b40c12;
 }
 
+.calculator--item {
+  display: none;
+}
+
+.calculator--item_1-active {
+  display: block;
+}
+
+.calculator--item_2-active {
+  display: block;
+}
+
+.calculator--item_3-active {
+  display: block;
+}
+
+.calculator--item_4-active {
+  display: block;
+}
+
+.calculator--item_5-active {
+  display: block;
+}
+
+.calculator--item_6-active {
+  display: block;
+}
+
+.calculator--item_7-active {
+  display: block;
+}
+
+.calculator--item_8-active {
+  display: block;
+}
+
 .calculator--itemTitle {
   margin-top: 2.5rem;
   margin-bottom: 1.8rem;
@@ -1947,7 +1983,17 @@ h2,
 }
 
 .calculator--button {
+  position: absolute;
+  z-index: -100;
   margin-top: 2rem;
+  transition: opacity .5s;
+  opacity: 0;
+}
+
+.calculator--button-active {
+  position: relative;
+  z-index: 100;
+  opacity: 1;
 }
 
 .form {
