@@ -1,6 +1,7 @@
 .calculator.layout--calculator
 	h2.calculator--title Сколько стоит SMM?
-		.calculator--number 01/
+		.calculator--wrapper
+			.calculator--number 01/
 			.calculator--total 04
 	.calculator--item.calculator--item_1.calculator--item_1-active
 		.calculator--itemTitle Получаете ли Вы сейчас клиентов из социальных сетей?
@@ -10,89 +11,101 @@
 		.calculator--choise
 			input.calculator--choise_no(type="radio" id="choise_2" name="item_1" value="нет")
 			label(for="choise_2") Нет
-		button.button.button-bg-white.calculator--button.calculator--button_yes(type="submit") Далее1
-		button.button.button-bg-white.calculator--button.calculator--button_no(type="submit") Далее2
+		button.button.button-bg-white.calculator--button.calculator--button_yes(type="submit") Далее
+		button.button.button-bg-white.calculator--button.calculator--button_no(type="submit") Далее
 	.calculator--item.calculator--item_2
 		.calculator--itemTitle Какие инструменты Вы используете?
 		.calculator--choise
-			input(type="checkbox" id="choise_3" name="item_2" value="да")
+			input(type="checkbox" id="choise_3" name="item_2" value="5000")
 			label(for="choise_3") Таргетированная реклама
 		.calculator--choise
-			input(type="checkbox" id="choise_4" name="item_22" value="нет")
+			input(type="checkbox" id="choise_4" name="item_2" value="10000")
 			label(for="choise_4") Ведение группы компании
 		.calculator--choise
-			input(type="checkbox" id="choise_5" name="item_2222" value="нет")
+			input(type="checkbox" id="choise_5" name="item_2" value="5000")
 			label(for="choise_5") Другое
 		button.button.button-bg-white.calculator--button(type="submit") Далее
 	.calculator--item.calculator--item_3
 		.calculator--itemTitle В каких Социальных сетях работаете?
 		.calculator--choise
-			input(type="checkbox" id="choise_6" name="item_3" value="да")
+			input(type="checkbox" id="choise_6" name="item_3" value="1")
 			label(for="choise_6") Вконтакте
 		.calculator--choise
-			input(type="checkbox" id="choise_7" name="item_3" value="нет")
+			input(type="checkbox" id="choise_7" name="item_3" value="1")
 			label(for="choise_7") FaceBook
 		.calculator--choise
-			input(type="checkbox" id="choise_8" name="item_3" value="нет")
+			input(type="checkbox" id="choise_8" name="item_3" value="1")
 			label(for="choise_8") Instagram
 		.calculator--choise
-			input(type="checkbox" id="choise_9" name="item_3" value="нет")
+			input(type="checkbox" id="choise_9" name="item_3" value="1")
 			label(for="choise_9") Одноклассники
 		button.button.button-bg-white.calculator--button(type="submit") Далее
 	.calculator--item.calculator--item_4
 		.calculator--itemTitle Какую цель вы ставите перед SMM?
 		.calculator--choise
-			input(type="checkbox" id="choise_10" name="item_1" value="да")
+			input(type="checkbox" id="choise_10" name="item_4" value="да")
 			label(for="choise_10") Трафик на сайт
 		.calculator--choise
-			input(type="checkbox" id="choise_11" name="item_1" value="нет")
+			input(type="checkbox" id="choise_11" name="item_4" value="нет")
 			label(for="choise_11") Повторные продажи действующим клиентам
 		.calculator--choise
-			input(type="checkbox" id="choise_12" name="item_1" value="нет")
+			input(type="checkbox" id="choise_12" name="item_4" value="нет")
 			label(for="choise_12") Поиск новых клиентов
 		.calculator--choise
-			input(type="checkbox" id="choise_13" name="item_1" value="нет")
+			input(type="checkbox" id="choise_13" name="item_4" value="нет")
 			label(for="choise_13") Имидж и охват аудитории
 		.calculator--choise
-			input(type="checkbox" id="choise_14" name="item_1" value="нет")
+			input(type="checkbox" id="choise_14" name="item_4" value="нет")
 			label(for="choise_14") Не отставать от конкурентов
 		.calculator--choise
-			input(type="checkbox" id="choise_15" name="item_1" value="нет")
+			input(type="checkbox" id="choise_15" name="item_4" value="нет")
 			label(for="choise_15") Другое
-		button.button.button-bg-white.calculator--button(type="submit") Далее
+		a.button.button-bg-white.calculator--button(href="#4rdPage") Итого
 	.calculator--item.calculator--item_5
-		.calculator--itemTitle Получаете ли Вы сейчас клиентов из социальных сетей?
+		.calculator--itemTitle В каких Социальных сетях планируете создать группу компании?
 		.calculator--choise
-			input.calculator--choise_1(type="radio" id="choise_1" name="item_1" value="да")
-			label(for="choise_1") Да
+			input(type="checkbox" id="choise_16" name="item_5" value="10000")
+			label(for="choise_16") Вконтакте
 		.calculator--choise
-			input.calculator--choise_1(type="radio" id="choise_2" name="item_1" value="нет")
-			label(for="choise_2") Нет
-		button.button.button-bg-white.calculator--button(type="submit") Далее
+			input(type="checkbox" id="choise_17" name="item_5" value="10000")
+			label(for="choise_17") FaceBook
+		.calculator--choise
+			input(type="checkbox" id="choise_18" name="item_5" value="10000")
+			label(for="choise_18") Instagram
+		.calculator--choise
+			input(type="checkbox" id="choise_19" name="item_5" value="10000")
+			label(for="choise_19") Не знаю
+		button.button.button-bg-white.calculator--button Далее
 	.calculator--item.calculator--item_6
-		.calculator--itemTitle Получаете ли Вы сейчас клиентов из социальных сетей?
+		.calculator--itemTitle Планируете ли запустить рекламные кампании в Социальных сетях (таргетированную рекламу)?
 		.calculator--choise
-			input.calculator--choise_1(type="radio" id="choise_1" name="item_1" value="да")
-			label(for="choise_1") Да
+			input(type="radio" id="choise_20" name="item_6" value="5000")
+			label(for="choise_20") Да
 		.calculator--choise
-			input.calculator--choise_1(type="radio" id="choise_2" name="item_1" value="нет")
-			label(for="choise_2") Нет
-		button.button.button-bg-white.calculator--button(type="submit") Далее
+			input(type="radio" id="choise_21" name="item_6" value="0")
+			label(for="choise_21") Нет
+		.calculator--choise
+			input(type="radio" id="choise_22" name="item_6" value="5000")
+			label(for="choise_22") Не знаю
+		button.button.button-bg-white.calculator--button Далее
 	.calculator--item.calculator--item_7
-		.calculator--itemTitle Получаете ли Вы сейчас клиентов из социальных сетей?
+		.calculator--itemTitle Какую цель вы ставите перед SMM?
 		.calculator--choise
-			input.calculator--choise_1(type="radio" id="choise_1" name="item_1" value="да")
-			label(for="choise_1") Да
+			input(type="checkbox" id="choise_23" name="item_7" value="нет")
+			label(for="choise_23") Трафик на сайт
 		.calculator--choise
-			input.calculator--choise_1(type="radio" id="choise_2" name="item_1" value="нет")
-			label(for="choise_2") Нет
-		button.button.button-bg-white.calculator--button(type="submit") Далее
-	.calculator--item.calculator--item_8
-		.calculator--itemTitle Получаете ли Вы сейчас клиентов из социальных сетей?
+			input(type="checkbox" id="choise_24" name="item_7" value="нет")
+			label(for="choise_24") Повторные продажи действующим клиентам
 		.calculator--choise
-			input.calculator--choise_1(type="radio" id="choise_1" name="item_1" value="да")
-			label(for="choise_1") Да
+			input(type="checkbox" id="choise_25" name="item_7" value="нет")
+			label(for="choise_25") Поиск новых клиентов
 		.calculator--choise
-			input.calculator--choise_1(type="radio" id="choise_2" name="item_1" value="нет")
-			label(for="choise_2") Нет
-		button.button.button-bg-white.calculator--button(type="submit") Далее
+			input(type="checkbox" id="choise_26" name="item_7" value="нет")
+			label(for="choise_26") Имидж и охват аудитории
+		.calculator--choise
+			input(type="checkbox" id="choise_27" name="item_7" value="нет")
+			label(for="choise_27") Не отставать от конкурентов
+		.calculator--choise
+			input(type="checkbox" id="choise_28" name="item_7" value="нет")
+			label(for="choise_28") Другое
+		a.button.button-bg-white.calculator--button(href="#4rdPage") Итого

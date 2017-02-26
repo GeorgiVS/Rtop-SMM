@@ -3111,6 +3111,6 @@ $(document).ready(function () {
 		responsive: 768,
 		
 		responsiveHeight: 768,
-		anchors: ['firstPage'],
+		anchors: ['firstPage','secondPage','3rdPage', '4rdPage']
 	});
 });

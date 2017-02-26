@@ -20,11 +20,17 @@
 		}
 	}
 	//
-	&--number {
+	&--wrapper {
 		@extend %h1_h2;
 		position: absolute;
 		top: 0;
 		right: 0;
+	}
+		//
+	&--number {
+		@extend %h1_h2;
+		display: inline-block;
+	
 	}
 	//
 	&--total {
@@ -92,16 +98,19 @@
 	}
 	//
 	&--button {
-		position: absolute;
+		position: relative;
 		z-index: -100;
 		margin-top: 2rem;
-		transition: opacity .5s;
-		opacity: 0;
+		
 		//
 		&-active {
-			position: relative;
 			z-index: 100;
-			opacity: 1;
+		
+		}
+		//
+		&_no {
+			left: -122px;
 		}
 	}
+	
 }
